@@ -86,17 +86,12 @@
 
     <!--Container of the three dimensional world-->
 <div>
-<div id="container" style="width:100%; height:50em; background-color:black; margin-top: 15px;" > </div>
+<div id="container" style="width:100%; height:50em; background-color:black;" > </div>
 </div>
     <!--Container of three dimensional world ends-->
 
-
-
-
-
-
     <!--Infograph dic and table-->
-        <div id="info" style="width:100%;height:200px;background-color:black; margin-top: 50px; padding: 15px;">
+        <div id="info" style="width:100%;height:200px;background-color:black; padding: 15px;">
                    <table class="table">
                       <tr>
                           <td align="center">Name</td>
@@ -419,14 +414,14 @@
 
                             //With this if clause we check if the asteroid has a name. If it doesn't have one we assign the dessignation as the name, by calling the ShowAsteroid() function.
                             if (data[i].Name.length > 1) {
-                                ShowAsteroid(data[i].ID, data[i].Name, data[i].FurthestPoint, data[i].NearestPoint, data[i].Inclination, data[i].Speed, data[i].Designation, data[i].ClosestEarth);
+                                ShowAsteroid(data[i].ID, data[i].Name, data[i].FurthestPoint, data[i].NearestPoint, data[i].Inclination, data[i].Speed, data[i].Designation, data[i].ClosestEarth, data[i].OrbitDegrees);
                             }
                             else {
-                                ShowAsteroid(data[i].ID, data[i].Designation, data[i].FurthestPoint, data[i].NearestPoint, data[i].Inclination, data[i].Speed, data[i].Designation, data[i].ClosestEarth);
+                                ShowAsteroid(data[i].ID, data[i].Designation, data[i].FurthestPoint, data[i].NearestPoint, data[i].Inclination, data[i].Speed, data[i].Designation, data[i].ClosestEarth, data[i].OrbitDegrees);
                             }
 
                             //Call AddSphere() function
-                            addsphere(data[i].ID, data[i].FurthestPoint, data[i].NearestPoint, data[i].Speed, data[i].Inclination);
+                            addsphere(data[i].ID, data[i].FurthestPoint, data[i].NearestPoint, data[i].Speed, data[i].Inclination, data[i].OrbitDegrees);
 
 
                         }
@@ -442,7 +437,7 @@
         }
 
     //This function adds the asteroids in the three dimensional world and to the grouparray defined earlier
-        function addsphere(id, furthest, nearest, speed, degrees) {
+        function addsphere(id, furthest, nearest, speed, degrees, orbitDegrees) {
 
             material = new THREE.LineBasicMaterial({ color: 0xffffff });
             var asteroidMaterial = new THREE.MeshPhongMaterial({
@@ -454,16 +449,22 @@
             });
 
             var jsbox = new THREE.Mesh(new THREE.SphereGeometry(150, 32, 32), asteroidMaterial);
+            //alert(orbitDegrees);
             jsbox.id = id;
-            jsbox.position.x = Math.round(furthest * 14950);
-            var grouped = new THREE.Object3D();
+            var degreesToRadians = orbitDegrees * (Math.PI / 180);
+            jsbox.position.x = Math.cos(degreesToRadians) * Math.round(furthest * 14950);
+            jsbox.position.y = Math.sin(degreesToRadians) * Math.round(furthest * 14950);
+            //jsbox.position.x = Math.round(furthest * 14950);
 
+            var grouped = new THREE.Object3D();
             //Converting the units the ones we use.
             var realFurthest = furthest * 14950;
             var realNearest = nearest * 14950;
 
             //Assigning Group location for the asteroid.
-            grouped.position.x = realFurthest - realNearest;
+            grouped.position.x = Math.cos(degreesToRadians) * (realFurthest - realNearest);
+            grouped.position.y = Math.sin(degreesToRadians) * (realFurthest - realNearest);
+            //grouped.position.x = realFurthest - realNearest;
 
             //Add asteroid to group
             grouped.add(jsbox);
@@ -487,7 +488,7 @@
         }
 
     //This function displays the asteroid on the sidebar of the web application and adds a click event for each of them.
-        function ShowAsteroid(id, name, furthestpoint, nearestpoint, degrees, speed, designation, closestearth) {
+        function ShowAsteroid(id, name, furthestpoint, nearestpoint, degrees, speed, designation, closestearth, orbitDegrees) {
 
             var ListAsteroids = window.document.getElementById('ListAsteroids');
             var asteroid = document.createElement("li");
@@ -541,7 +542,7 @@
 
                         //Define Green orbit of asteroid
                         material = new THREE.LineBasicMaterial({ color: 0x00FF23 });
-
+                        //alert(orbitDegrees);
                         //Formulas that project how the asteroids orbit looks like in three dimensional space
                         var angle = degrees * Math.PI / 180;
                         var asteroidTrajectory = new THREE.CircleGeometry(rrezja, 64);
@@ -551,9 +552,16 @@
                         //Define Line
                         var line = (new THREE.Line(asteroidTrajectory, material));
 
+                        var degreesToRadians = orbitDegrees * (Math.PI / 180);
+
                         //Pivot and position line accordingly
+                        
+                        
+                        line.position.x = Math.cos(degreesToRadians) * (furthestpoint - nearestpoint);
+                        line.position.y = Math.sin(degreesToRadians) * (furthestpoint - nearestpoint);
+
                         line.rotation.y = angle;
-                        line.position.x = furthestpoint - nearestpoint;
+                        //line.position.x = furthestpoint - nearestpoint;
                         asteroidTrajectory.vertices.shift();
 
                         //Assign id to line for easier management
@@ -612,7 +620,13 @@
 
                         //Pivot and position line accordingly
 						line.rotation.y = angle;
-						line.position.x = furthestpoint - nearestpoint;
+                        //line.position.x = furthestpoint - nearestpoint;
+						var orbitDegrees = myjson[j].OrbitDegrees;
+						var degreesToRadians = orbitDegrees * (Math.PI / 180);
+
+						line.position.x = Math.cos(degreesToRadians) * (furthestpoint - nearestpoint);
+						line.position.y = Math.sin(degreesToRadians) * (furthestpoint - nearestpoint);
+
 						asteroidTrajectory.vertices.shift();
 
                         //Assign ID to line for easier management
