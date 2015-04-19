@@ -1,0 +1,96 @@
+body {
+    background: black url("http://www.ntrs.nasa.gov/images/bg_image.jpg") no-repeat top;
+    padding-top: 50px;
+
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+h1,h3,p,a {
+
+    color: white;
+
+}
+
+div {
+
+    color: white;
+}
+
+.custom {
+
+    width: 100%
+
+
+
+}
+
+div.listy ul{
+
+   list-style-type: none;
+
+
+}
+
+div.listy ul:hover{
+
+    cursor: pointer;
+
+
+}
+
+div.listy ul li {
+
+    margin-right: 40px;
+
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #0093AF;
+
+    border: solid 1px #004552;
+
+}
+
+div.listy ul li:hover{
+
+    background-color: #004552;
+    color: white;
+    font-weight: bold;
+    border: solid 1px #0093AF;
+    cursor: pointer;
+}
+
+div.listy ul li:active{
+
+    background-color: #004552;
+    color: white;
+    font-weight: bold;
+    border: solid 1px #0093AF;
+    cursor: pointer;
+}
+
+div.Asteroids{
+
+    width: 120px;
+    height: 100%;
+    padding: 10px 10px 5px 10px;
+    background-color: #004552;
+    margin-top:3px;
+
+
+}
+
+div.Asteroids:hover{
+
+    background-color: #0093AF;
+    cursor: pointer;
+    border: solid 1px #0093AF;
+    color: white;
+
+
+}
+

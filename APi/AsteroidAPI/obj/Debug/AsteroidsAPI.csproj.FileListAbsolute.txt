@@ -1,0 +1,264 @@
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\obj\Debug\AsteroidsAPI.csprojResolveAssemblyReference.cache
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Antlr3.Runtime.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\EntityFramework.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.CSharp.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.Data.Edm.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.Data.OData.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Newtonsoft.Json.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Configuration.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Data.DataSetExtensions.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Data.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Data.Entity.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Drawing.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Net.Http.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Net.Http.WebRequest.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Spatial.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Abstractions.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.ApplicationServices.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Entity.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Helpers.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.OData.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.Tracing.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Mvc.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Optimization.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Providers.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Razor.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Routing.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.WebPages.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Xml.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Xml.Linq.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\WebGrease.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\EntityFramework.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Newtonsoft.Json.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Helpers.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Mvc.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Razor.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.WebPages.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.Tracing.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Web.Http.OData.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.Data.Edm.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\Microsoft.Data.OData.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\System.Spatial.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\de\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\es\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\fr\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\it\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ja\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ko\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\ru\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\AsteroidAPI.dll.config
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\AsteroidAPI.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\bin\AsteroidAPI.pdb
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\obj\Debug\AsteroidAPI.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\ParkingAPI\obj\Debug\AsteroidAPI.pdb
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\AsteroidAPI.dll.config
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\AsteroidAPI.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\AsteroidAPI.pdb
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Antlr3.Runtime.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\EntityFramework.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.CSharp.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.Edm.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.OData.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Newtonsoft.Json.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Configuration.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Data.DataSetExtensions.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Data.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Data.Entity.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Drawing.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.WebRequest.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Spatial.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Abstractions.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.ApplicationServices.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Entity.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Helpers.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.OData.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.Tracing.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Mvc.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Optimization.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Providers.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Razor.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Routing.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Xml.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Xml.Linq.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\WebGrease.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\EntityFramework.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Newtonsoft.Json.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Helpers.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Mvc.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Razor.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.Tracing.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.OData.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.Edm.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.OData.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Spatial.xml
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\de\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\es\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\fr\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\it\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ja\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ko\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\ru\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\obj\Debug\AsteroidsAPI.csprojResolveAssemblyReference.cache
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\obj\Debug\AsteroidAPI.dll
+C:\Users\Armend Imeri\Dropbox\Asteroids\APi\AsteroidAPI\obj\Debug\AsteroidAPI.pdb
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\AsteroidAPI.dll.config
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\AsteroidAPI.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\AsteroidAPI.pdb
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Antlr3.Runtime.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\EntityFramework.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.CSharp.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.Edm.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.OData.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Newtonsoft.Json.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Configuration.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Data.DataSetExtensions.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Data.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Data.Entity.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Drawing.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.WebRequest.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Spatial.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Abstractions.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.ApplicationServices.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Entity.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Helpers.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.OData.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.Tracing.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Mvc.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Optimization.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Providers.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Razor.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Routing.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Xml.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Xml.Linq.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\WebGrease.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\EntityFramework.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Newtonsoft.Json.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Helpers.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Mvc.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Razor.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.Tracing.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Web.Http.OData.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.Edm.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\Microsoft.Data.OData.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\System.Spatial.xml
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\de\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\es\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\fr\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\it\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ja\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ko\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\ru\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\obj\Debug\AsteroidsAPI.csprojResolveAssemblyReference.cache
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\obj\Debug\AsteroidAPI.dll
+C:\Users\Armend\Dropbox\Asteroids\APi\AsteroidAPI\obj\Debug\AsteroidAPI.pdb

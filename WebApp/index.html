@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Space Apps Challenge - Asteroid Visualisation</title>
+
+    <!-- Bootstrap core CSS
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    -->
+     <!-- Custom styles for this template -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--<link href="css/jasny-bootstrap.css" rel="stylesheet">-->
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <script src="js/three.js" type="text/javascript"></script>
+    <script src="js/TrackballControls.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    
+
+
+</head>
+
+<!-- Initlize WebGL and ThreeJS once body loads -->
+<body onload="init(); animate();">
+
+    <!-- Navigation bar and sidebar html code -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+
+    <!--The Sidebar-->
+    <ul class="nav navbar-nav">
+        <li>
+            <div class="Asteroids" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                <p> Show Asteroids</p>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Avengers Visualization</a>
+    </div>
+
+    <div id="navbar" class="collapse navbar-collapse">
+    <ul  class="nav navbar-nav" style="display: inline;">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">Information</a></li>
+        <li><a href="#contact">About Us</a></li>
+    </ul>
+    </div>
+
+    <nav id="myNavmenu" class="navmenu navmenu-inverse navmenu-fixed-left offcanvas" role="navigation">
+        <div style="width: 100%; height: 100%; overflow: auto" class="listy">
+           <div style="padding: 15px 10px 5px 15px; margin-bottom: 20px;">
+            <label><input type="checkbox" onclick="ShowAllAsteroids();" id="ShowAllAsteroids">Show all Asteroids</label> <br> <br>
+            <b>Speed:</b> <input id="SpeedRange" type="range"  min="0" max="100" />
+           </div>
+            <ul id="ListAsteroids">
+            </ul>
+        </div>
+    </nav>
+
+</nav>
+    <!--Navigation and asteroid sidebars ends here-->
+
+
+
+    <!--Container of the three dimensional world-->
+<div>
+<div id="container" style="width:100%; height:50em; background-color:black; margin-top: 15px;" > </div>
+</div>
+    <!--Container of three dimensional world ends-->
+
+
+
+
+
+
+    <!--Infograph dic and table-->
+        <div id="info" style="width:100%;height:200px;background-color:black; margin-top: 50px; padding: 15px;">
+                   <table class="table">
+                      <tr>
+                          <td align="center">Name</td>
+                          <td align="center">Speed (km / h)</td>
+                          <td align="center">Designation</td>
+                          <td align="center">Years to Circle own Orbit</td>
+                          <td align="center">Closest Distance to Earth (Kilometers)</td>
+                       </tr>
+                       <tr>
+                           <td align="center" id="as_name"></td>
+                           <td align="center" id="as_speed"></td>
+                           <td align="center" id="as_designation"></td>
+                           <td align="center" id="as_time"></td>
+                           <td align="center" id="as_distance"></td>
+                       </tr>
+
+                   </table>
+         </div>
+    <!--Info graph ends here-->
+
+ 
+
+    <!-- Page Footer -->
+     <div style="width: 98%; height: 50px; background-color: #1E1E1F; margin-top: 50px; padding: 15px;">
+         Copyright Avengers Team - SEEU TechPark Tetovo</p>
+      </div>
+    <!--Footer Ends here-->
+
+
+	 
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script type="text/javascript">
+
+    //Definition of camera, scene and planet orbits
+        var camera, scene, renderer;
+        var mercuryTrajectory = new THREE.CircleGeometry(5791, 64);
+        var venusTrajectory = new THREE.CircleGeometry(10820, 64);
+        var earthTrajectory = new THREE.CircleGeometry(14950, 64);
+        var marsTrajectory = new THREE.CircleGeometry(22790, 64);
+        var jupiterTrajectory = new THREE.CircleGeometry(77850, 82);
+        var saturnTrajectory = new THREE.CircleGeometry(143300, 96);
+        var uranusTrajectory = new THREE.CircleGeometry(287700, 102);
+        var neptuneTrajectory = new THREE.CircleGeometry(450300, 132);
+
+    // definition of groups for each planet
+        var objModel = new THREE.Object3D();
+        var groupMercury = new THREE.Object3D();
+        var groupVenus = new THREE.Object3D();
+        var groupMars = new THREE.Object3D();
+        var groupJupiter = new THREE.Object3D();
+        var groupSaturn = new THREE.Object3D();
+        var groupUranus = new THREE.Object3D();
+        var groupNeptune = new THREE.Object3D();
+        var i = 0;
+
+    //Axis on which the asteroid incliniation is based on
+        var axis = new THREE.Vector3(0, 1, 0);
+
+    //Array of all groups added to scene for easier management
+        var grouparray = [];
+        var ArrayPointer;
+        ArrayPointer = 0;
+        scene = new THREE.Scene();
+        var a = new THREE.Vector3(0, 1, 0);
+
+    //Quaternion used to pivot asteroid movement based on inclination
+        var quaternion = new THREE.Quaternion().setFromAxisAngle(a, Math.PI / 4);
+
+    //Speed of movement of asteroids and planets inside the 3D world.
+        var SpeedRange = window.document.getElementById('SpeedRange');
+        SpeedRange.value = 1;
+        window.setInterval(render, 500);
+
+
+        function init() {
+            canvas = document.getElementById("container");
+            //renderer
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+            canvas.appendChild(renderer.domElement);
+            //scene definition
+
+            //scene.fog = new THREE.Fog( 0x808080, 3000, 6000 );
+            // LIGHTS
+            var ambientLight = new THREE.AmbientLight(0x444444);
+            var light = new THREE.DirectionalLight(0xFFFFFF, 1.0);
+            light.position.set(200, 400, 500);
+
+            var light2 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
+            light2.position.set(-400, 200, -300);
+
+            var light4 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
+            light4.position.set(0, -200, 0);
+
+            var light5 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
+            light5.position.set(300, 300, -400);
+
+            var light3 = new THREE.PointLight(0xFFAA19);
+            light3.position.set(0, 0, 0);
+
+            //Adding lights to scene
+            scene.add(ambientLight);
+            scene.add(light);
+            scene.add(light2);
+            scene.add(light3);
+            scene.add(light4);
+            scene.add(light5);
+
+            //camera definition
+            camera = new THREE.PerspectiveCamera(45, canvas.offsetWidth / canvas.offsetHeight, 0.1, 5000000);
+            scene.add(camera);
+            camera.position.set(0, 0, 100000);
+            camera.rotation.set(0, 3, 0);
+
+            //controls
+            controls = new THREE.TrackballControls(camera, canvas);
+
+            //Texture of the sun
+            var cylinderMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/suntexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+
+            //adding sun to 3d world
+            head = new THREE.Mesh(new THREE.SphereGeometry(1595.800, 32, 32), cylinderMaterial);
+
+            head.position.x = 0;
+            head.position.y = 0;
+            head.position.z = 0;
+            scene.add(head);
+
+            //Mercury Material
+            var mercuryMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/mercurytexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            mercury = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), mercuryMaterial);
+            mercury.position.x = 5791;
+            mercury.position.y = 0;
+            mercury.position.z = 0;
+            groupMercury.add(mercury);
+            scene.add(groupMercury);
+
+            //Venus Material
+            var venusMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/venustexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            venus = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), venusMaterial);
+            venus.position.x = -10820;
+            venus.position.y = 0;
+            venus.position.z = 0;
+            groupVenus.add(venus);
+            scene.add(groupVenus);
+
+            // Earth Material
+            var earthMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/earthmap1k.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+
+            // Earth Mesh
+            earth = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), earthMaterial);
+            earth.position.x = 14950;
+            earth.position.y = 0;
+            earth.position.z = 0;
+
+            objModel.add(earth);
+            scene.add(objModel);
+
+            //Mars Material
+            var marsMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/marstexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            //30.39
+            mars = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), marsMaterial);
+            mars.position.x = -22790;
+            mars.position.y = 0;
+            mars.position.z = 0;
+            groupMars.add(mars);
+            scene.add(groupMars);
+
+            //Jupiter Material
+            var jupiterMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/jupitertexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            jupiter = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), jupiterMaterial);
+            jupiter.position.x = 77850;
+            jupiter.position.y = 0;
+            jupiter.position.z = 0;
+            groupJupiter.add(jupiter);
+            scene.add(groupJupiter);
+
+            //Saturn Material
+            var saturnMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/saturntexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            saturn = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), saturnMaterial);
+            saturn.position.x = 143300;
+            saturn.position.y = 0;
+            saturn.position.z = 0;
+            groupSaturn.add(saturn);
+            scene.add(groupSaturn);
+
+            //Uranus
+            var uranusMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/uranustexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            uranus = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), uranusMaterial);
+            uranus.position.x = 287700;
+            uranus.position.y = 0;
+            uranus.position.z = 0;
+            groupUranus.add(uranus);
+            scene.add(groupUranus);
+
+            //Neptune
+            var neptuneMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/neptunetexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+            neptune = new THREE.Mesh(new THREE.SphereGeometry(700, 32, 32), neptuneMaterial);
+            neptune.position.x = 450300;
+            neptune.position.y = 0;
+            neptune.position.z = 0;
+            groupNeptune.add(neptune);
+            scene.add(groupNeptune);
+
+            //trajectories
+            material = new THREE.LineBasicMaterial({color: 0xffffff});
+            earthTrajectory.vertices.shift();
+            mercuryTrajectory.vertices.shift();
+            venusTrajectory.vertices.shift();
+            marsTrajectory.vertices.shift();
+            jupiterTrajectory.vertices.shift();
+            saturnTrajectory.vertices.shift();
+            uranusTrajectory.vertices.shift();
+            neptuneTrajectory.vertices.shift();
+            var marssTrajectory = new THREE.Line(marsTrajectory, material);
+
+            //adding trajectories (orbits) to scene
+            scene.add(new THREE.Line(earthTrajectory, material));
+            scene.add(new THREE.Line(mercuryTrajectory, material));
+            scene.add(new THREE.Line(venusTrajectory, material));
+            scene.add(marssTrajectory);
+            scene.add(new THREE.Line(jupiterTrajectory, material));
+            scene.add(new THREE.Line(saturnTrajectory, material));
+            scene.add(new THREE.Line(uranusTrajectory, material));
+            scene.add(new THREE.Line(neptuneTrajectory, material));
+			
+			//create skybox (background)
+            var worldTexture = THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/galaxy.jpg');
+            worldTexture.min_filter = THREE.LinearFilter;
+            worldTexture.mag_filter = THREE.LinearFilter;
+            worldTexture.wrapS = THREE.RepeatWrapping;
+            worldTexture.wrapT = THREE.RepeatWrapping;
+            var sphereMaterial = new THREE.MeshBasicMaterial({
+                map: worldTexture,
+                side: THREE.DoubleSide
+            });
+            sphere = new THREE.Mesh(new THREE.SphereGeometry(3000000, 50, 50), sphereMaterial);
+            scene.add(sphere);
+
+        }
+
+    //in myjson we save all asteroids and their data
+        var myjson;
+
+    //This function grabs data from our API which we used some custome filtering on the Minor Planet Center Database.
+    //It then adds the asteroids onto the 3D visualisation and the sidebar with the asteroids.
+        function GetData() {
+            var url = "http://asteroids.imeri.biz/API/Asteroid";
+            var number = Math.random() * 150;
+            var foo = {};
+
+
+            $.getJSON(url)
+                    .done(function (data) {
+
+                        myjson = data;
+
+                        for (var i = 0; i < data.length; i++) {
+
+                            //With this if clause we check if the asteroid has a name. If it doesn't have one we assign the dessignation as the name, by calling the ShowAsteroid() function.
+                            if (data[i].Name.length > 1) {
+                                ShowAsteroid(data[i].ID, data[i].Name, data[i].FurthestPoint, data[i].NearestPoint, data[i].Inclination, data[i].Speed, data[i].Designation, data[i].ClosestEarth);
+                            }
+                            else {
+                                ShowAsteroid(data[i].ID, data[i].Designation, data[i].FurthestPoint, data[i].NearestPoint, data[i].Inclination, data[i].Speed, data[i].Designation, data[i].ClosestEarth);
+                            }
+
+                            //Call AddSphere() function
+                            addsphere(data[i].ID, data[i].FurthestPoint, data[i].NearestPoint, data[i].Speed, data[i].Inclination);
+
+
+                        }
+
+                    })
+                //In case communication with API fails display the following message
+                    .fail(function (jqXHR, textStatus, err) {
+
+                        alert('Communication failed please refresh the page.');
+
+                    });
+
+        }
+
+    //This function adds the asteroids in the three dimensional world and to the grouparray defined earlier
+        function addsphere(id, furthest, nearest, speed, degrees) {
+
+            material = new THREE.LineBasicMaterial({ color: 0xffffff });
+            var asteroidMaterial = new THREE.MeshPhongMaterial({
+                map: THREE.ImageUtils.loadTexture('http://imeri.biz/asteroids/img/asteroidtexture.jpg'),
+                diffuse: 0xffffff,
+                specular: 0x404040,
+                shininess: 16,
+                ambient: 0x000000
+            });
+
+            var jsbox = new THREE.Mesh(new THREE.SphereGeometry(150, 32, 32), asteroidMaterial);
+            jsbox.id = id;
+            jsbox.position.x = Math.round(furthest * 14950);
+            var grouped = new THREE.Object3D();
+
+            //Converting the units the ones we use.
+            var realFurthest = furthest * 14950;
+            var realNearest = nearest * 14950;
+
+            //Assigning Group location for the asteroid.
+            grouped.position.x = realFurthest - realNearest;
+
+            //Add asteroid to group
+            grouped.add(jsbox);
+
+            //Assign group id for management
+            grouped.id = id;
+
+            //Converting Incliniation of asteroid to our units
+            var angle = degrees * Math.PI / 180;
+
+            //Quaternion to pivot asteroid movement depended on inclination
+            var quaternion1 = new THREE.Quaternion().setFromAxisAngle(axis, angle);
+            grouped.rotation.setEulerFromQuaternion(quaternion1);
+
+            //Add group and asteroid to 3D World.
+            scene.add(grouped);
+
+            //Add group to array we use for management with asteroids and movement
+            grouparray[ArrayPointer] = grouped;
+            ArrayPointer++;
+        }
+
+    //This function displays the asteroid on the sidebar of the web application and adds a click event for each of them.
+        function ShowAsteroid(id, name, furthestpoint, nearestpoint, degrees, speed, designation, closestearth) {
+
+            var ListAsteroids = window.document.getElementById('ListAsteroids');
+            var asteroid = document.createElement("li");
+            asteroid.textContent = name;
+            asteroid.id = "asteroids";
+            asteroid.value = id;
+
+
+            //Onclick event on asteroid button is defined here. Once it is called it draws the asteroids orbit
+            asteroid.onclick = function () {
+
+                var rrezja = furthestpoint * 14950;
+
+                // * 10000 to show it in Kilometers, not in the units we use
+                // Infograph variables assigned to javascript variables for easier access
+                var asteroidSpeedPerYear = (2 * rrezja * Math.PI * speed * 10000) / 365 / 24;
+                var as_name = window.document.getElementById('as_name');
+                var as_speed = window.document.getElementById('as_speed');
+                var as_designation = window.document.getElementById('as_designation');
+                var as_time = window.document.getElementById('as_time');
+                var as_distance = window.document.getElementById('as_distance');
+
+                //Infograph populated with data from asteroid
+                as_name.innerHTML = name;
+                as_speed.innerHTML = asteroidSpeedPerYear.toFixed(2).toString();
+                as_designation.innerHTML = designation;
+                as_time.innerHTML = speed;
+                as_distance.innerHTML = (closestearth * 149597871).toFixed(2).toString();
+
+                //Function to draw line for asteroid by using for loop to find the group and draw on it
+                for (var i = 0; i < grouparray.length; i++) {
+                    if (grouparray[i].id == id) {
+
+                        //Define RED line that circles the asteroid so that the user can see it easier
+                        material2 = new THREE.LineBasicMaterial({ color: 0xFF0000 });
+                        var asteroidTracker = new THREE.CircleGeometry(550, 64);
+                        var lineTracker = (new THREE.Line(asteroidTracker, material2));
+
+                        //Assign position of red line to that the same of the asteroid
+                        lineTracker.position.x = grouparray[i].children[0].position.x;
+                        lineTracker.position.y = grouparray[i].children[0].position.y;
+                        lineTracker.position.z = grouparray[i].children[0].position.z;
+                        asteroidTracker.vertices.shift();
+
+                        //Assign ID to line for easier management
+                        lineTracker.id = 'RedLine';
+                        //Focus camera on asteroid and add red line to circle it
+                        grouparray[i].children[0].add(camera);
+                        grouparray[i].add(lineTracker);
+                        camera.position.z = -10000;
+
+                        //Define Green orbit of asteroid
+                        material = new THREE.LineBasicMaterial({ color: 0x00FF23 });
+
+                        //Formulas that project how the asteroids orbit looks like in three dimensional space
+                        var angle = degrees * Math.PI / 180;
+                        var asteroidTrajectory = new THREE.CircleGeometry(rrezja, 64);
+                        furthestpoint = furthestpoint * 14950;
+                        nearestpoint = nearestpoint * 14950;
+
+                        //Define Line
+                        var line = (new THREE.Line(asteroidTrajectory, material));
+
+                        //Pivot and position line accordingly
+                        line.rotation.y = angle;
+                        line.position.x = furthestpoint - nearestpoint;
+                        asteroidTrajectory.vertices.shift();
+
+                        //Assign id to line for easier management
+                        line.id = 'Orbit';
+
+                        //Add Line (Orbit) to three dimensional world
+                        scene.add(line);
+
+                    }
+                }
+            };
+
+            //Add Asteroid to sidebar list
+            ListAsteroids.appendChild(asteroid);
+        }
+		
+
+		
+    //The function below is very similiar to the click event except that it runs for each asteroid instead of just one
+        var ShowAll = window.document.getElementById('ShowAllAsteroids');		
+		function ShowAllAsteroids() {
+
+            if (ShowAll.checked == true){
+
+		for (var i = 0; i < grouparray.length; i++) {
+		for (var j = 0; j < myjson.length;j++)
+                    if (grouparray[i].id == myjson[j].ID) {
+						
+                        //Define red line around asteroid
+						material2 = new THREE.LineBasicMaterial({color: 0xFF0000});
+						var asteroidTracker = new THREE.CircleGeometry(550, 64);
+						var lineTracker = (new THREE.Line(asteroidTracker, material2));
+
+                        //Red line around asteroid position
+						lineTracker.position.x = grouparray[i].children[0].position.x;
+						lineTracker.position.y = grouparray[i].children[0].position.y;
+						lineTracker.position.z = grouparray[i].children[0].position.z;
+						asteroidTracker.vertices.shift();
+
+                        //Add line to group and scene since group is already in scene
+						lineTracker.id = 'RedLine';
+                        grouparray[i].add(lineTracker);
+						
+                        //Define color of line
+						material = new THREE.LineBasicMaterial({color: 0x00FF23});
+										
+                        //Formulas that project how the asteroids orbit looks like in three dimensional space
+						var rrezja = myjson[j].FurthestPoint * 14950;
+						var asteroidTrajectory = new THREE.CircleGeometry(rrezja, 64);						
+						var angle = myjson[j].Inclination * Math.PI / 180;
+						furthestpoint = myjson[j].FurthestPoint * 14950;
+						nearestpoint = myjson[j].NearestPoint * 14950;
+
+                        //Define Line
+						var line = (new THREE.Line(asteroidTrajectory, material));
+
+                        //Pivot and position line accordingly
+						line.rotation.y = angle;
+						line.position.x = furthestpoint - nearestpoint;
+						asteroidTrajectory.vertices.shift();
+
+                        //Assign ID to line for easier management
+						line.id = 'Orbit';
+
+                        //Add Line (Orbit) to three dimensional world
+						scene.add(line);					
+                    }
+                }
+            }
+                //Function below removes all orbits and selections from the three dimensional world.
+            else {
+
+            for (var i=scene.children.length-1; i>=0; i--){
+
+                if(scene.children[i].id == 'Orbit')
+                {
+                    scene.remove(scene.children[i]);
+                }
+            }
+            for (var f = 0; f < grouparray.length; f++) {
+
+                grouparray[f].remove(grouparray[f].children[1]);
+
+                }
+            }
+
+            };
+
+
+        function animate() {
+            requestAnimationFrame(animate);
+            render();
+            update();
+        }
+    
+        //Update function by THREEJS with this function we move all objects in our application
+        function update() {
+            controls.update();
+
+            //Movement of planets
+            objModel.rotation.z += 0.002 * SpeedRange.value;
+            groupMercury.rotation.z += 0.00828 * SpeedRange.value;
+            groupVenus.rotation.z += 0.00628 * SpeedRange.value;
+            groupJupiter.rotation.z += 0.00016 * SpeedRange.value;
+            groupSaturn.rotation.z += 0.000068 * SpeedRange.value;
+            groupUranus.rotation.z += 0.000024 * SpeedRange.value;
+            groupNeptune.rotation.z += 0.0000122 * SpeedRange.value;
+            groupMars.rotation.z += 0.00106 * SpeedRange.value;
+
+            //Movement of asteroids by using pre-defined group array
+            for (var i = 0; i < grouparray.length; i++) {
+                grouparray[i].rotation.z += (0.002 / myjson[i].Speed) * SpeedRange.value;
+            }
+        }
+
+    //ThreeJS renderer function
+        function render() {
+            renderer.render(scene, camera);
+        }
+
+    //Delay on loading data, wait to load all controls first because of async calls.
+		setTimeout(function() { GetData(); }, 1000);
+
+
+    </script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jasny-bootstrap.min.js"></script>
+
+
+</body>
+</html>
+

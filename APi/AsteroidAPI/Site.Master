@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AsteroidAPI.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="StyleSection" runat="server"/>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Default.aspx">CrowdFunding</a>
+                </div>
+                <div runat="server" id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li runat="server" id="homeNav" class="active"><a href="Default.aspx">Home</a></li>
+
+                        <li id="projectsNav"><a href="Projects.aspx">Projects</a></li>
+
+                        <li><a href="#">Contact</a></li>
+
+                        <li runat="server" id ="MyAccountNav" class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+
+                                <li><a href="MyProfile.aspx">My Profile</a></li>
+                                <li><a href="MyProjects.aspx">My Projects</a></li>
+                                <li><a href="Comments.aspx">My Comments</a></li>
+
+                                <li class="divider"></li>
+                                <li><a href="Logout.aspx">Logout</a></li>
+                            </ul>
+                        </li>
+                       <li id="newProjectNav"><a href="NewProject.aspx">Create Project</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li runat="server" id="registerNav"><a href="Register.aspx">Register</a></li>
+                        <li  runat="server" id="loginNav"><a href="Login.aspx">Log In</a></li>
+                        <li  runat="server" id="logoutNav"><a href="Logout.aspx">Log Out</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentSection" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <%-- Script Section --%>
+    <%: Scripts.Render("~/bundles/jQuery") %>
+    <asp:ContentPlaceHolder ID="ScriptSection" runat="server" />
+</body>
+
+</html>

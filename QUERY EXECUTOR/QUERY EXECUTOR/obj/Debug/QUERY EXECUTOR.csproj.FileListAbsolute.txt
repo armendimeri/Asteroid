@@ -1,0 +1,9 @@
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\bin\Debug\QUERY EXECUTOR.exe.config
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\bin\Debug\QUERY EXECUTOR.exe
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\bin\Debug\QUERY EXECUTOR.pdb
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\obj\Debug\QUERY EXECUTOR.csprojResolveAssemblyReference.cache
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\obj\Debug\QUERY_EXECUTOR.Form1.resources
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\obj\Debug\QUERY_EXECUTOR.Properties.Resources.resources
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\obj\Debug\QUERY EXECUTOR.csproj.GenerateResource.Cache
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\obj\Debug\QUERY EXECUTOR.exe
+C:\Users\Armend Imeri\Dropbox\Asteroids\QUERY EXECUTOR\QUERY EXECUTOR\obj\Debug\QUERY EXECUTOR.pdb

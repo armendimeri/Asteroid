@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Spire.BarCode</id>
+    <version>1.2.5</version>
+    <title>Spire.BarCode</title>
+    <authors>E-iceblue</authors>
+    <owners>E-iceblue</owners>
+    <licenseUrl>http://www.e-iceblue.com/Download/download-barcode-for-net-now/free-spire-barcode-1-0.html?Itemid=0</licenseUrl>
+    <projectUrl>http://www.e-iceblue.com/Introduce/barcode-for-net-introduce.html#.UbgY_9icvCw</projectUrl>
+    <iconUrl>http://www.e-iceblue.com/images/product_logo/product_buy/BarCodeNET.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a package of C#, VB.NET Example Project for Spire.BarCode for .NET.
+
+Spire.BarCode for .NET is a professional and reliable barcode generation and recognition component. It enables developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (ASP.NET, WinForms and Web Service) and it supports in C#, VB.NET.
+
+Spire.Barcode for.NET is 100% FREE barcode component.</description>
+    <summary>Spire.BarCode for .NET is a FREE and professional barcode component specially designed for .NET developers (C#, VB.NET, ASP.NET) to generate, read 1D &amp; 2D barcodes.</summary>
+    <releaseNotes>e-iceblue, a professional c#/vb.net component provider published a free barcode component –Spire.BarCode. Spire.BarCode for NET, as a 100% FREE and professional barcode component features an easy way to integrate barcode processing. Adapted to various common image formats, such as Bitmap, JPG, PNG, EMF, TIFF, GIF and WMF, Spire.BarCode for NET enables developers to generate and read 1D&amp;2D image barcodes in C#, VB.NET and ASP.NET. It is ideal for developers and programmers to add Enterprise-Level barcode formats to their .NET applications quickly and easily.
+
+Spire.BarCode for NET not only allows developers to read their most often used Linear, 2D and Postal barcodes, but can detect them anywhere by any orientation. In addition, it supports more than 37 different types of barcodes. Featuring an easy integration, Spire.Barcode for .NET can be easily integrated into any .NET applications, API Mode and Component Mode . When it comes to reading and writing barcode, developers can easily set barcode image borders, border colors, style, margins and width. Furthermore, it is fitful to rotate barcode images to any angle and produce high quality barcode images.</releaseNotes>
+    <copyright>Copyright © 2014 e-iceblue. All Rights Reserved.</copyright>
+    <language>en-US</language>
+    <tags>C# VB.NET ASP.NET Free barcode component</tags>
+  </metadata>
+</package>
