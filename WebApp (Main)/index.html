@@ -41,13 +41,13 @@
 
 
     <!--The Sidebar-->
-    <ul class="nav navbar-nav">
+    <!--<ul class="nav navbar-nav">
         <li>
             <div class="Asteroids" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
                 <p> Show Asteroids</p>
             </div>
         </li>
-    </ul>
+    </ul>-->
 
 
     <div class="navbar-header">
@@ -57,14 +57,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Avengers Visualization</a>
+        <div class="Asteroids" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+            <p> Asteroids List</p>
+        </div>
     </div>
 
     <div id="navbar" class="collapse navbar-collapse">
     <ul  class="nav navbar-nav" style="display: inline;">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">Information</a></li>
-        <li><a href="#contact">About Us</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="team.html">The Team</a></li>
     </ul>
     </div>
 
@@ -397,7 +399,7 @@
     //in myjson we save all asteroids and their data
         var myjson;
 
-    //This function grabs data from our API which we used some custome filtering on the Minor Planet Center Database.
+    //This function grabs data from our API which we used some custom filtering on the Minor Planet Center Database.
     //It then adds the asteroids onto the 3D visualisation and the sidebar with the asteroids.
         function GetData() {
             var url = "http://asteroids.imeri.biz/API/Asteroid";
@@ -676,6 +678,15 @@
             groupUranus.rotation.z += 0.000024 * SpeedRange.value;
             groupNeptune.rotation.z += 0.0000122 * SpeedRange.value;
             groupMars.rotation.z += 0.00106 * SpeedRange.value;
+            mercury.rotation.z += 0.02;
+            earth.rotation.z += 0.02;
+            venus.rotation.z += 0.02;
+            mars.rotation.z += 0.02;
+            neptune.rotation.z += 0.02;
+            saturn.rotation.z += 0.02;
+            neptune.rotation.z += 0.02;
+            head.rotation.z += 0.01;
+
 
             //Movement of asteroids by using pre-defined group array
             for (var i = 0; i < grouparray.length; i++) {
