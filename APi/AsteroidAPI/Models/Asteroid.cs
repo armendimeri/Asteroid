@@ -21,6 +21,7 @@ namespace AsteroidAPI
         public string DateOfPosition { get; set; }
         public bool Hazard { get; set; }
         public string Designation { get; set; }
+        public float OrbitDegrees { get; set; }
         public Asteroid()
         {
 
@@ -89,11 +90,12 @@ namespace AsteroidAPI
                     ast.Designation = row["packed_designation"].ToString();    
                     ast.FurthestPoint = float.Parse(row["aphelion_distance"].ToString());
                     ast.NearestPoint = float.Parse(row["perihelion_distance"].ToString());
-                    ast.Speed = float.Parse(row["semimajor_axis"].ToString());
+                    ast.Speed = float.Parse(row["period"].ToString());
                     ast.ClosestDate = row["perihelion_date"].ToString();                    
                     ast.Hazard = Convert.ToBoolean(row["pha"]);
                     ast.Inclination = float.Parse(row["inclination"].ToString());
                     ast.ClosestEarth = float.Parse(row["earth_moid"].ToString());
+                    ast.OrbitDegrees = float.Parse(row["argument_of_perihelion"].ToString());
                     AsteroidsList[table.Rows.IndexOf(row)] = ast;
 
                }
